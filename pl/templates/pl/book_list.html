@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Public Library</title>
+    </head>
+    <body>
+        <h1>LIST OF BOOKS</h1>
+
+        {% for book in books %}
+        <div>
+
+            <h2><a href="">{{ book.title }}</a></h2>
+            <p>{{ book.author|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
